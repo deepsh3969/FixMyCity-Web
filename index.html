@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="FixMyCity - A civic platform for reporting, tracking and resolving local city issues."
+    >
+
+    <title>FixMyCity | Together, Let's Fix Our City</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     ANNOUNCEMENT BAR
+========================================================= -->
+
+<div class="announcement-bar">
+    <div class="container announcement-inner">
+        <span>Citizen-first civic reporting platform</span>
+        <span class="announcement-location">Serving Indian cities</span>
+    </div>
+</div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header" id="top">
+
+    <div class="container navbar">
+
+        <a href="#home" class="brand">
+            <span class="brand-mark">
+                <span class="brand-dot"></span>
+            </span>
+
+            <span>
+                <strong>FixMyCity</strong>
+                <small>Civic Connect</small>
+            </span>
+        </a>
+
+        <button
+            class="mobile-menu-button"
+            id="mobileMenuButton"
+            aria-label="Open navigation"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+
+            <a href="#home" class="nav-link active">Home</a>
+
+            <a href="#report" class="nav-link">Report Issue</a>
+
+            <a href="#issues" class="nav-link">Issues</a>
+
+            <a href="#map" class="nav-link">Map</a>
+
+            <a href="#about" class="nav-link">About</a>
+
+            <a href="#contact" class="nav-link">Contact</a>
+
+            <button class="nav-search" id="navSearchButton">
+                Search
+            </button>
+
+            <button class="login-button" id="loginButton">
+                Login
+            </button>
+
+            <a href="#report" class="header-report-button">
+                Report an Issue
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<main>
+
+<section class="hero" id="home">
+
+    <div class="hero-image"></div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <div class="hero-badge">
+            <span class="badge-line"></span>
+            Better streets start with better reporting
+        </div>
+
+        <h1>
+            Together,
+            <span>Let's Fix Our City.</span>
+        </h1>
+
+        <p>
+            Report potholes, garbage, broken streetlights, drainage problems
+            and other civic issues. Track their progress and help build a
+            cleaner, safer and better-connected city.
+        </p>
+
+        <div class="hero-actions">
+
+            <a href="#report" class="button button-primary">
+                Report an Issue
+            </a>
+
+            <a href="#issues" class="button button-light">
+                View Issues
+            </a>
+
+        </div>
+
+        <div class="hero-stats">
+
+            <div class="hero-stat">
+                <strong id="heroReportedCount">24</strong>
+                <span>Issues Reported</span>
+            </div>
+
+            <div class="hero-stat">
+                <strong id="heroResolvedCount">11</strong>
+                <span>Issues Resolved</span>
+            </div>
+
+            <div class="hero-stat">
+                <strong>6</strong>
+                <span>Issue Categories</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ISSUE CATEGORIES
+========================================================= -->
+
+<section class="section categories-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="eyebrow">WHAT CAN YOU REPORT?</span>
+
+                <h2>Common civic issues</h2>
+            </div>
+
+            <p>
+                Help identify everyday problems affecting residents,
+                commuters and communities.
+            </p>
+
+        </div>
+
+
+        <div class="category-grid">
+
+            <article class="category-card">
+
+                <div class="category-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1712852519360-c37b75a0eddf?auto=format&fit=crop&w=1200&q=85"
+                        alt="Rain-soaked road in Mumbai, India"
+                    >
+                </div>
+
+                <div class="category-content">
+                    <span class="category-number">01</span>
+                    <h3>Roads & Potholes</h3>
+                    <p>
+                        Report damaged roads, potholes, broken footpaths
+                        and unsafe road surfaces.
+                    </p>
+                    <a href="#report" data-category-link="Roads & Potholes">
+                        Report problem
+                    </a>
+                </div>
+
+            </article>
+
+
+            <article class="category-card">
+
+                <div class="category-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1762805544550-f12a8ebceb2e?auto=format&fit=crop&w=1200&q=85"
+                        alt="Municipal garbage collection truck in Delhi, India"
+                    >
+                </div>
+
+                <div class="category-content">
+                    <span class="category-number">02</span>
+                    <h3>Garbage & Cleanliness</h3>
+                    <p>
+                        Report overflowing bins, garbage accumulation
+                        and public cleanliness concerns.
+                    </p>
+                    <a href="#report" data-category-link="Garbage & Cleanliness">
+                        Report problem
+                    </a>
+                </div>
+
+            </article>
+
+
+            <article class="category-card">
+
+                <div class="category-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1670948351730-0afd343abebf?auto=format&fit=crop&w=1200&q=85"
+                        alt="Indian city street illuminated by streetlights"
+                    >
+                </div>
+
+                <div class="category-content">
+                    <span class="category-number">03</span>
+                    <h3>Streetlights</h3>
+                    <p>
+                        Report non-functional streetlights and poorly
+                        illuminated public areas.
+                    </p>
+                    <a href="#report" data-category-link="Streetlights">
+                        Report problem
+                    </a>
+                </div>
+
+            </article>
+
+
+            <article class="category-card">
+
+                <div class="category-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1712852519360-c37b75a0eddf?auto=format&fit=crop&w=1200&q=85"
+                        alt="Monsoon road in Mumbai"
+                    >
+                </div>
+
+                <div class="category-content">
+                    <span class="category-number">04</span>
+                    <h3>Water & Drainage</h3>
+                    <p>
+                        Report waterlogging, blocked drains and
+                        drainage-related problems.
+                    </p>
+                    <a href="#report" data-category-link="Water & Drainage">
+                        Report problem
+                    </a>
+                </div>
+
+            </article>
+
+
+            <article class="category-card">
+
+                <div class="category-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1670948351730-0afd343abebf?auto=format&fit=crop&w=1200&q=85"
+                        alt="Indian urban street at night"
+                    >
+                </div>
+
+                <div class="category-content">
+                    <span class="category-number">05</span>
+                    <h3>Public Safety</h3>
+                    <p>
+                        Report unsafe public spaces, damaged infrastructure
+                        and other safety concerns.
+                    </p>
+                    <a href="#report" data-category-link="Public Safety">
+                        Report problem
+                    </a>
+                </div>
+
+            </article>
+
+
+            <article class="category-card">
+
+                <div class="category-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1708101312087-dd35dcbb41b9?auto=format&fit=crop&w=1200&q=85"
+                        alt="Green public space in Mumbai"
+                    >
+                </div>
+
+                <div class="category-content">
+                    <span class="category-number">06</span>
+                    <h3>Parks & Public Places</h3>
+                    <p>
+                        Report damaged benches, playgrounds, parks
+                        and public facilities.
+                    </p>
+                    <a href="#report" data-category-link="Parks & Public Places">
+                        Report problem
+                    </a>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     REPORT ISSUE
+========================================================= -->
+
+<section class="section report-section" id="report">
+
+    <div class="container">
+
+        <div class="section-heading centered">
+
+            <span class="eyebrow">CITIZEN REPORTING</span>
+
+            <h2>Report a civic issue</h2>
+
+            <p>
+                Give us the details and help your local authorities
+                understand what needs attention.
+            </p>
+
+        </div>
+
+
+        <div class="report-layout">
+
+            <div class="report-information">
+
+                <div class="report-info-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1784803537675-ee9273a61b38?auto=format&fit=crop&w=1600&q=85"
+                        alt="Indian urban street in Mumbai"
+                    >
+                </div>
+
+                <div class="report-info-content">
+
+                    <span class="eyebrow">HOW IT WORKS</span>
+
+                    <h3>Turn a local problem into a visible action.</h3>
+
+                    <p>
+                        Every report helps create a clearer picture of
+                        civic issues across the city.
+                    </p>
+
+                    <div class="process-list">
+
+                        <div class="process-item">
+                            <span>01</span>
+                            <div>
+                                <strong>Report</strong>
+                                <p>Describe the problem and location.</p>
+                            </div>
+                        </div>
+
+                        <div class="process-item">
+                            <span>02</span>
+                            <div>
+                                <strong>Track</strong>
+                                <p>Follow the complaint through each stage.</p>
+                            </div>
+                        </div>
+
+                        <div class="process-item">
+                            <span>03</span>
+                            <div>
+                                <strong>Resolve</strong>
+                                <p>Monitor progress until resolution.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <form class="issue-form" id="issueForm">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="issueTitle">
+                            Issue Title
+                        </label>
+
+                        <input
+                            type="text"
+                            id="issueTitle"
+                            name="issueTitle"
+                            placeholder="Example: Large pothole near school"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="issueCategory">
+                            Category
+                        </label>
+
+                        <select
+                            id="issueCategory"
+                            name="issueCategory"
+                            required
+                        >
+
+                            <option value="">Select category</option>
+
+                            <option>Roads & Potholes</option>
+
+                            <option>Garbage & Cleanliness</option>
+
+                            <option>Streetlights</option>
+
+                            <option>Water & Drainage</option>
+
+                            <option>Public Safety</option>
+
+                            <option>Parks & Public Places</option>
+
+                            <option>Other</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="issueDescription">
+                        Description
+                    </label>
+
+                    <textarea
+                        id="issueDescription"
+                        name="issueDescription"
+                        rows="5"
+                        placeholder="Describe the problem..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="issueLocation">
+                        Location / Address
+                    </label>
+
+                    <input
+                        type="text"
+                        id="issueLocation"
+                        name="issueLocation"
+                        placeholder="Example: Dombivli East, Maharashtra"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Pin location on map
+                    </label>
+
+                    <div class="report-map-wrapper">
+
+                        <div id="reportMap">
+                            Google Maps will appear here after
+                            the API key is configured.
+                        </div>
+
+                        <button
+                            type="button"
+                            class="location-button"
+                            id="currentLocationButton"
+                        >
+                            Use my current location
+                        </button>
+
+                    </div>
+
+                    <input type="hidden" id="issueLatitude">
+                    <input type="hidden" id="issueLongitude">
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="issueDate">
+                            Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="issueDate"
+                            name="issueDate"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="issueTime">
+                            Time
+                        </label>
+
+                        <input
+                            type="time"
+                            id="issueTime"
+                            name="issueTime"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="issueImage">
+                        Upload Photo
+                    </label>
+
+                    <input
+                        type="file"
+                        id="issueImage"
+                        name="issueImage"
+                        accept="image/*"
+                    >
+
+                    <div
+                        class="image-preview"
+                        id="imagePreview"
+                    ></div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="citizenName">
+                            Your Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="citizenName"
+                            name="citizenName"
+                            placeholder="Your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="citizenEmail">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="citizenEmail"
+                            name="citizenEmail"
+                            placeholder="you@example.com"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="button button-primary submit-button"
+                >
+                    Submit Report
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ISSUES
+========================================================= -->
+
+<section class="section issues-section" id="issues">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="eyebrow">COMMUNITY REPORTS</span>
+
+                <h2>Recent civic issues</h2>
+
+            </div>
+
+            <p>
+                Explore reported issues and follow their progress.
+            </p>
+
+        </div>
+
+
+        <div class="issue-controls">
+
+            <div class="search-box">
+
+                <input
+                    type="search"
+                    id="issueSearch"
+                    placeholder="Search issues..."
+                >
+
+            </div>
+
+
+            <select id="categoryFilter">
+
+                <option value="all">All Categories</option>
+
+                <option>Roads & Potholes</option>
+
+                <option>Garbage & Cleanliness</option>
+
+                <option>Streetlights</option>
+
+                <option>Water & Drainage</option>
+
+                <option>Public Safety</option>
+
+                <option>Parks & Public Places</option>
+
+            </select>
+
+
+            <select id="statusFilter">
+
+                <option value="all">All Statuses</option>
+
+                <option>Reported</option>
+
+                <option>Under Review</option>
+
+                <option>In Progress</option>
+
+                <option>Resolved</option>
+
+            </select>
+
+        </div>
+
+
+        <div
+            class="issues-grid"
+            id="issuesGrid"
+        ></div>
+
+
+        <div class="empty-state" id="emptyState">
+
+            <h3>No issues found</h3>
+
+            <p>
+                Try changing your search or filter.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     GOOGLE MAP
+========================================================= -->
+
+<section class="section map-section" id="map">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="eyebrow">LIVE CIVIC MAP</span>
+
+                <h2>Issues across the city</h2>
+
+            </div>
+
+            <p>
+                Explore reported issues using Google Maps.
+            </p>
+
+        </div>
+
+
+        <div class="map-container">
+
+            <div id="googleMap">
+
+                <div class="map-placeholder">
+
+                    <strong>Google Maps</strong>
+
+                    <span>
+                        Configure your Google Maps API key
+                        to activate the interactive map.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="map-filter-panel">
+
+                <label for="mapCategoryFilter">
+                    Map filter
+                </label>
+
+                <select id="mapCategoryFilter">
+
+                    <option value="all">All issues</option>
+
+                    <option>Roads & Potholes</option>
+
+                    <option>Garbage & Cleanliness</option>
+
+                    <option>Streetlights</option>
+
+                    <option>Water & Drainage</option>
+
+                    <option>Public Safety</option>
+
+                    <option>Parks & Public Places</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="map-summary">
+
+                <strong id="mapIssueCount">0</strong>
+
+                <span>reported issues</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section class="section about-section" id="about">
+
+    <div class="container about-layout">
+
+        <div class="about-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1751973398959-277d8d6502bf?auto=format&fit=crop&w=1400&q=85"
+                alt="People walking alongside a road in Mumbai during monsoon"
+            >
+
+        </div>
+
+
+        <div class="about-content">
+
+            <span class="eyebrow">ABOUT FIXMYCITY</span>
+
+            <h2>
+                Technology that helps citizens
+                speak up about their city.
+            </h2>
+
+            <p>
+                FixMyCity is designed as a simple civic communication
+                platform where residents can report problems, view
+                existing complaints and understand the progress of
+                reported issues.
+            </p>
+
+            <p>
+                From potholes and garbage to drainage and streetlights,
+                the platform brings everyday civic concerns into one
+                accessible digital space.
+            </p>
+
+
+            <div class="about-highlights">
+
+                <div>
+                    <strong>01</strong>
+                    <span>Easy reporting</span>
+                </div>
+
+                <div>
+                    <strong>02</strong>
+                    <span>Issue tracking</span>
+                </div>
+
+                <div>
+                    <strong>03</strong>
+                    <span>Location-based visibility</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section class="section contact-section" id="contact">
+
+    <div class="container">
+
+        <div class="section-heading centered">
+
+            <span class="eyebrow">GET IN TOUCH</span>
+
+            <h2>Contact FixMyCity</h2>
+
+            <p>
+                Have feedback about the platform? Send us a message.
+            </p>
+
+        </div>
+
+
+        <div class="contact-layout">
+
+            <form class="contact-form" id="contactForm">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="contactName">
+                            Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="contactName"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="contactEmail">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="contactEmail"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="contactSubject">
+                        Subject
+                    </label>
+
+                    <input
+                        type="text"
+                        id="contactSubject"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="contactMessage">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="contactMessage"
+                        rows="6"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="button button-primary"
+                >
+                    Send Message
+                </button>
+
+            </form>
+
+
+            <div class="contact-card">
+
+                <div class="contact-card-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1769271972348-429a8ad18f51?auto=format&fit=crop&w=1400&q=85"
+                        alt="Mumbai city skyline at night"
+                    >
+
+                </div>
+
+                <div class="contact-card-content">
+
+                    <span class="eyebrow">CITY CONNECT</span>
+
+                    <h3>Stay connected with your community.</h3>
+
+                    <p>
+                        Use FixMyCity to make civic concerns easier
+                        to report, discover and track.
+                    </p>
+
+                    <div class="contact-details">
+
+                        <p>
+                            <strong>Email</strong>
+                            support@fixmycity.in
+                        </p>
+
+                        <p>
+                            <strong>Service Area</strong>
+                            Indian cities
+                        </p>
+
+                        <p>
+                            <strong>Platform</strong>
+                            Citizen Civic Reporting
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="#home" class="brand footer-logo">
+
+                <span class="brand-mark">
+                    <span class="brand-dot"></span>
+                </span>
+
+                <span>
+                    <strong>FixMyCity</strong>
+                    <small>Civic Connect</small>
+                </span>
+
+            </a>
+
+            <p>
+                A citizen-focused platform for reporting and
+                tracking everyday civic issues.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Quick Links</h4>
+
+            <a href="#home">Home</a>
+
+            <a href="#report">Report Issue</a>
+
+            <a href="#issues">Issues</a>
+
+            <a href="#map">Map</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Information</h4>
+
+            <a href="#about">About</a>
+
+            <a href="#contact">Contact</a>
+
+            <a href="#report">How It Works</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Community</h4>
+
+            <a href="#issues">Recent Issues</a>
+
+            <a href="#map">Issue Map</a>
+
+            <a href="#report">Submit Report</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+        <span>
+            © 2026 FixMyCity. Academic project.
+        </span>
+
+        <span>
+            Built for a cleaner, safer and better-connected city.
+        </span>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     ISSUE DETAILS MODAL
+========================================================= -->
+
+<div
+    class="modal"
+    id="issueModal"
+    aria-hidden="true"
+>
+
+    <div class="modal-backdrop"></div>
+
+    <div class="modal-content">
+
+        <button
+            class="modal-close"
+            id="modalClose"
+            aria-label="Close"
+        >
+            ×
+        </button>
+
+        <div id="modalBody"></div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     LOGIN MODAL
+========================================================= -->
+
+<div
+    class="modal"
+    id="loginModal"
+    aria-hidden="true"
+>
+
+    <div class="modal-backdrop"></div>
+
+    <div class="modal-content small-modal">
+
+        <button
+            class="modal-close"
+            id="loginModalClose"
+            aria-label="Close"
+        >
+            ×
+        </button>
+
+        <div class="modal-heading">
+
+            <span class="eyebrow">CITIZEN ACCOUNT</span>
+
+            <h2>Welcome back</h2>
+
+            <p>
+                Login to manage your civic reports.
+            </p>
+
+        </div>
+
+
+        <form id="loginForm">
+
+            <div class="form-group">
+
+                <label for="loginEmail">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="loginPassword">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    required
+                >
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="button button-primary full-width"
+            >
+                Login
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     TOAST
+========================================================= -->
+
+<div
+    class="toast"
+    id="toast"
+></div>
+
+
+<!-- =========================================================
+     GOOGLE MAPS - loaded at runtime by script.js using the
+     key provided through config.js (generated from the
+     GOOGLE_MAPS_API_KEY environment variable at build time).
+========================================================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>

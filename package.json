@@ -1,0 +1,11 @@
+{
+  "name": "fixmycity",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FixMyCity - Civic Issue Reporting Platform",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js && node serve.js",
+    "start": "node serve.js"
+  }
+}
